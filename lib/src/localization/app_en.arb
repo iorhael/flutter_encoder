@@ -1,0 +1,6 @@
+{
+  "appTitle": "flutter_encoder",
+  "@appTitle": {
+    "description": "The title of the application"
+  }
+}
