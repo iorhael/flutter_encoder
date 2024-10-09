@@ -3,17 +3,19 @@ import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 
 import 'file_picker_feature/file_picker_view.dart';
+import 'file_picker_feature/file_picker_controller.dart';
 import 'settings/settings_controller.dart';
 import 'settings/settings_view.dart';
 
 /// The Widget that configures your application.
 class MyApp extends StatelessWidget {
-  const MyApp({
+  MyApp({
     super.key,
     required this.settingsController,
   });
 
   final SettingsController settingsController;
+  final FilePickerController filePickerController = FilePickerController();
 
   @override
   Widget build(BuildContext context) {
@@ -69,7 +71,7 @@ class MyApp extends StatelessWidget {
                   case SettingsView.routeName:
                     return SettingsView(controller: settingsController);
                   default:
-                    return const FilePickerView();
+                    return FilePickerView(controller: filePickerController);
                 }
               },
             );
