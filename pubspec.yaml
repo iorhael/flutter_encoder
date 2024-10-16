@@ -16,6 +16,7 @@ dependencies:
   flutter_localizations:
     sdk: flutter
   open_file: ^3.5.8
+  share_plus: ^10.0.3
 
 dev_dependencies:
   flutter_test:
