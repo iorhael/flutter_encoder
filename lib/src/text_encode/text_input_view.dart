@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:share_plus/share_plus.dart';
 
+import '../ciphers/morse_encoder.dart';
+
 class TextInputView extends StatefulWidget {
   const TextInputView({super.key});
 
@@ -49,7 +51,7 @@ class _TextInputView extends State<TextInputView> {
             ),
             SizedBox(height: 20),
 
-            // Key input field (shown only for Vigenère)
+            // Key input field (shown only for Vigenère and Caesar)
             if (["Vigenère", "Caesar"].contains(_selectedAlgorithm))
               TextField(
                 controller: _keyController,
@@ -89,7 +91,7 @@ class _TextInputView extends State<TextInputView> {
                 ),
                 onChanged: (text) {
                   setState(() {
-                    _outputController.text = text; // Output the same text for now
+                    _outputController.text = MorseEncoder.convertToMorseCode(_inputController.text);
                   });
                 },
               ),
