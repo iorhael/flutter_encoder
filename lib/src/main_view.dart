@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:easy_localization/easy_localization.dart';
 
 import 'settings/settings_view.dart';
 import 'text_encode/text_encode_view.dart';
@@ -30,9 +31,19 @@ class _MainViewState extends State<MainView> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Encoder app'),
+        title: Text(context.tr('mainTitle')),
         centerTitle: true,
         actions: [
+          IconButton(
+            icon: const Icon(Icons.language),
+            onPressed: () {
+              if (context.locale == const Locale('en')) {
+                context.setLocale(const Locale('ru'));
+              } else {
+                context.setLocale(const Locale('en'));
+              }
+            },
+          ),
           IconButton(
             icon: const Icon(Icons.settings),
             onPressed: () {
@@ -45,14 +56,14 @@ class _MainViewState extends State<MainView> {
         child: _widgetOptions.elementAt(_selectedIndex),
       ),
       bottomNavigationBar: BottomNavigationBar(
-        items: const <BottomNavigationBarItem>[
+        items: <BottomNavigationBarItem>[
           BottomNavigationBarItem(
             icon: Icon(Icons.home),
-            label: 'Home',
+            label: context.tr('homeNavTitle'),
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.history),
-            label: 'History',
+            label: context.tr('historyNavTitle'),
           ),
         ],
         currentIndex: _selectedIndex,

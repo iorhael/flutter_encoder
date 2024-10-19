@@ -44,7 +44,7 @@ class _FileEncodeViewState extends State<FileEncodeView> {
                 'Picked file: ${_selectedFile!.path}',
                 style: const TextStyle(fontSize: 16),
                 textAlign: TextAlign.center,
-            ),
+              ),
           ],
         ),
       ),

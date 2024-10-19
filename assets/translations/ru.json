@@ -1,0 +1,23 @@
+{
+  "appTitle":{
+    "decription": "Название приложения"
+  },
+  "mainTitle": "Карманный Кодировщик",
+  "homeNavTitle": "Главная",
+  "historyNavTitle": "История",
+  "textTabTitle": "Кодирование Текста",
+  "fileTabTitle": "Кодирование Файлов",
+  "morse": "Морзе",
+  "caesar": "Цезарь",
+  "vigenere": "Виженер",
+  "vigenereKeyHint": "Ключ:",
+  "caesarShiftHint": "Сдвиг:",
+  "encoderInputHint": "Введите текст...",
+  "encoderOutputHint": "...и наблюдайте, как происходит магия",
+  "copiedMessage": "Скопировано в буфер обмена",
+  "chooseTheme": "Выберете Тему",
+  "systemTheme": "Системная Тема",
+  "lightTheme": "Светлая Тема",
+  "darkTheme": "Тёмная Тема",
+  "invalidSymbolMessage": "Недопустимый символ: {symbol}"
+}

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:easy_localization/easy_localization.dart';
 
 import 'settings_controller.dart';
 
@@ -16,9 +17,7 @@ class SettingsView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Choose theme'),
-      ),
+      appBar: AppBar(title: Text(context.tr('chooseTheme'))),
       body: Padding(
         padding: const EdgeInsets.all(16),
         // Glue the SettingsController to the theme selection DropdownButton.
@@ -30,19 +29,14 @@ class SettingsView extends StatelessWidget {
           value: controller.themeMode,
           // Call the updateThemeMode method any time the user selects a theme.
           onChanged: controller.updateThemeMode,
-          items: const [
+          items: [
             DropdownMenuItem(
-              value: ThemeMode.system,
-              child: Text('System Theme'),
-            ),
+                value: ThemeMode.system,
+                child: Text(context.tr('systemTheme'))),
             DropdownMenuItem(
-              value: ThemeMode.light,
-              child: Text('Light Theme'),
-            ),
+                value: ThemeMode.light, child: Text(context.tr('lightTheme'))),
             DropdownMenuItem(
-              value: ThemeMode.dark,
-              child: Text('Dark Theme'),
-            )
+                value: ThemeMode.dark, child: Text(context.tr('darkTheme'))),
           ],
         ),
       ),

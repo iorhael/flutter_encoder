@@ -1,16 +1,11 @@
+import 'package:easy_localization/easy_localization.dart';
+
+import 'encode_helper.dart';
+
 class MorseEncoder {
-  static final Map<String, String> morseCodeMap = {
-    'A': '.-', 'B': '-...', 'C': '-.-.', 'D': '-..', 'E': '.', 'F': '..-.', 'G': '--.', 'H': '....', 'I': '..', 'J': '.---',
-    'K': '-.-', 'L': '.-..', 'M': '--', 'N': '-.', 'O': '---', 'P': '.--.', 'Q': '--.-', 'R': '.-.', 'S': '...', 'T': '-',
-    'U': '..-', 'V': '...-', 'W': '.--', 'X': '-..-', 'Y': '-.--', 'Z': '--..',
-    '0': '-----', '1': '.----', '2': '..---', '3': '...--', '4': '....-', '5': '.....', '6': '-....', '7': '--...', '8': '---..', '9': '----.',
-    '.': '.-.-.-', ',': '--..--', '?': '..--..', "'": '.----.', '!': '-.-.--', '/': '-..-.', '(': '-.--.', ')': '-.--.-', '&': '.-...',
-    ':': '---...', ';': '-.-.-.', '=': '-...-', '+': '.-.-.', '-': '-....-', '_': '..--.-', '"': '.-..-.', '\$': '...-..-', '@': '.--.-.',
-    ' ': '/'
-  };
-
-  static String encode(String text) {
-
+  static String encode(String text, String languageCode) {
+    final Map<String, String> morseCodeMap =
+        EncodeHelper.morseCode(languageCode);
     final List<String> words = text.toUpperCase().split(' ');
     final List<String> morseCodeList = [];
 
@@ -21,8 +16,9 @@ class MorseEncoder {
       for (final letter in letters) {
         if (morseCodeMap.containsKey(letter)) {
           morseCodeLetters.add(morseCodeMap[letter]!);
-        }else{
-          throw FormatException("Invalid symbol: $letter");
+        } else {
+          throw FormatException(
+              tr('invalidSymbolMessage', namedArgs: {'symbol': letter}));
         }
       }
 
