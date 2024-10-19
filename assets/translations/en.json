@@ -1,0 +1,23 @@
+{
+  "appTitle": {
+    "description": "The title of the application"
+  },
+  "mainTitle": "Pocket Encoder",
+  "homeNavTitle": "Home",
+  "historyNavTitle": "History",
+  "textTabTitle": "Text Encoding",
+  "fileTabTitle": "File Encoding",
+  "morse": "Morse",
+  "caesar": "Caesar",
+  "vigenere": "Vigenere",
+  "vigenereKeyHint": "Key:",
+  "caesarShiftHint": "Shift:",
+  "encoderInputHint": "Enter text...",
+  "encoderOutputHint": "...and watch the magic happen",
+  "copiedMessage": "Copied to clipboard",
+  "chooseTheme": "Choose Theme",
+  "systemTheme": "System Theme",
+  "lightTheme": "Light Theme",
+  "darkTheme": "Dark Theme",
+  "invalidSymbolMessage": "Invalid symbol: {symbol}"
+}

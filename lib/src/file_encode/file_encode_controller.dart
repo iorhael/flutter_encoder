@@ -3,7 +3,6 @@ import 'dart:io';
 
 class FileEncodeController {
   Future<File?> pickFile() async {
-
     final result = await FilePicker.platform.pickFiles(
       allowMultiple: false,
       type: FileType.custom,
