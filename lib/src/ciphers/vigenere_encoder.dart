@@ -1,5 +1,3 @@
-import 'package:easy_localization/easy_localization.dart';
-
 import 'encode_helper.dart';
 
 class VigenereEncoder {
@@ -35,8 +33,7 @@ class VigenereEncoder {
           ch <= lastBigLetterOfAlphabetCode) {
         offset = firstBigLetterOfAlphabetCode;
       } else {
-        throw FormatException(
-            tr('invalidSymbolMessage', namedArgs: {'symbol': text[i]}));
+        throw FormatException("Invalid symbol $text[i]");
       }
 
       int x = (text.codeUnitAt(i) -

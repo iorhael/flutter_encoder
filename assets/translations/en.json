@@ -1,12 +1,9 @@
 {
-  "appTitle": {
-    "description": "The title of the application"
-  },
-  "mainTitle": "Pocket Encoder",
+  "mainTitle": "Pocket Encryptor",
   "homeNavTitle": "Home",
   "historyNavTitle": "History",
-  "textTabTitle": "Text Encoding",
-  "fileTabTitle": "File Encoding",
+  "textTabTitle": "Text Encrypting",
+  "fileTabTitle": "File Encrypting",
   "morse": "Morse",
   "caesar": "Caesar",
   "vigenere": "Vigenere",
@@ -19,5 +16,17 @@
   "systemTheme": "System Theme",
   "lightTheme": "Light Theme",
   "darkTheme": "Dark Theme",
-  "invalidSymbolMessage": "Invalid symbol: {symbol}"
+  "encryptToggleButton": "Encrypt",
+  "decryptToggleButton": "Decrypt",
+  "inProcessMessage": "Please wait",
+  "invalidKeyMessage": "Oops! Invalid key",
+  "enterSecretKeyLabel": "Enter Secret Key:",
+  "selectFileToEncrypt": "Select File to Encrypt",
+  "encryptButton": "Encrypt",
+  "selectPublicKeyFile": "Select Public Key File",
+  "fileIsReady": "Your File is Ready!",
+  "shareButton": "Share",
+  "selectFileToDecrypt": "Select File to Decrypt",
+  "decryptButton": "Decrypt",
+  "selectPrivateKeyFile": "Select Private Key File"
 }

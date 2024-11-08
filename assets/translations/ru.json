@@ -1,12 +1,9 @@
 {
-  "appTitle":{
-    "decription": "Название приложения"
-  },
-  "mainTitle": "Карманный Кодировщик",
+  "mainTitle": "Карманный Шифратор",
   "homeNavTitle": "Главная",
   "historyNavTitle": "История",
-  "textTabTitle": "Кодирование Текста",
-  "fileTabTitle": "Кодирование Файлов",
+  "textTabTitle": "Шифрование текста",
+  "fileTabTitle": "Шифрование файлов",
   "morse": "Морзе",
   "caesar": "Цезарь",
   "vigenere": "Виженер",
@@ -15,9 +12,21 @@
   "encoderInputHint": "Введите текст...",
   "encoderOutputHint": "...и наблюдайте, как происходит магия",
   "copiedMessage": "Скопировано в буфер обмена",
-  "chooseTheme": "Выберете Тему",
-  "systemTheme": "Системная Тема",
-  "lightTheme": "Светлая Тема",
-  "darkTheme": "Тёмная Тема",
-  "invalidSymbolMessage": "Недопустимый символ: {symbol}"
+  "chooseTheme": "Выберите тему",
+  "systemTheme": "Системная тема",
+  "lightTheme": "Светлая тема",
+  "darkTheme": "Тёмная тема",
+  "encryptToggleButton": "Зашифровать",
+  "decryptToggleButton": "Расшифровать",
+  "inProcessMessage": "Пожалуйста, подождите",
+  "invalidKeyMessage": "Упс! Некорректный ключ",
+  "enterSecretKeyLabel": "Введите секретный ключ:",
+  "selectFileToEncrypt": "Выберите файл для шифрования",
+  "encryptButton": "Зашифровать",
+  "selectPublicKeyFile": "Выберите файл открытого ключа",
+  "fileIsReady": "Ваш файл готов!",
+  "shareButton": "Поделиться",
+  "selectFileToDecrypt": "Выберите файл для расшифровки",
+  "decryptButton": "Расшифровать",
+  "selectPrivateKeyFile": "Выберите файл закрытого ключа"
 }

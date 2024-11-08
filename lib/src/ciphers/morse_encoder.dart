@@ -1,5 +1,3 @@
-import 'package:easy_localization/easy_localization.dart';
-
 import 'encode_helper.dart';
 
 class MorseEncoder {
@@ -17,8 +15,7 @@ class MorseEncoder {
         if (morseCodeMap.containsKey(letter)) {
           morseCodeLetters.add(morseCodeMap[letter]!);
         } else {
-          throw FormatException(
-              tr('invalidSymbolMessage', namedArgs: {'symbol': letter}));
+          throw FormatException("Invalid symbol $letter");
         }
       }
 

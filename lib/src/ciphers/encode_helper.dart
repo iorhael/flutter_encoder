@@ -145,18 +145,20 @@ class EncodeHelper {
     ..._morseCodeSpecialCharactersMap,
   };
 
-  static const Map<String, String> _alphabetInfoEnMap = {
+  static final Map<String, String> _alphabetInfoEnMap = {
     "sizeOfAlphabet": "26",
-    "capitalLettersRange": "[A-Z]",
+    "capitalLettersPattern": "[A-Z]",
+    "allowedCharacterPattern": "[a-zA-Z${specialCharacters.join()}]",
     "firstSmallLetterOfAlphabet": "a",
     "lastSmallLetterOfAlphabet": "z",
     "firstBigLetterOfAlphabet": "A",
     "lastBigLetterOfAlphabet": "Z"
   };
 
-  static const Map<String, String> _alphabetInfoRuMap = {
+  static final Map<String, String> _alphabetInfoRuMap = {
     "sizeOfAlphabet": "32",
-    "capitalLettersRange": "[А-Я]",
+    "capitalLettersPattern": "[А-Я]",
+    "allowedCharacterPattern": "[а-яА-Я${specialCharacters.join()}]",
     "firstSmallLetterOfAlphabet": "а",
     "lastSmallLetterOfAlphabet": "я",
     "firstBigLetterOfAlphabet": "А",
