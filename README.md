@@ -27,3 +27,6 @@ the `lib/src/localization` directory.
 
 To support additional languages, please visit the tutorial on
 [Internationalizing Flutter apps](https://flutter.dev/to/internationalization).
+
+## Screens diagram:
+<img width="1271" height="1356" alt="mobile_app_model" src="https://github.com/user-attachments/assets/8015d713-3813-4e97-af31-f3f8f219618e" />
